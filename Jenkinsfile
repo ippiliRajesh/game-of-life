@@ -10,6 +10,7 @@ pipeline {
               git url: 'https://github.com/ippiliRajesh/game-of-life.git', branch: 'master' 
             }
          }
+        }
           
         stage ( 'build and package' ) {
             steps {
@@ -23,6 +24,6 @@ pipeline {
               archiveArtifacts artifacts: 'gameoflife-web/target/gameoflife.war'
             }
         } 
-    }
+    
 }
 }
