@@ -2,7 +2,7 @@ pipeline {
     agent { label 'JDK_8' }
     
     stages{
-         stage( 'scorce code management' ) {
+         stage ( 'scorce code management' ) {
             steps{
             git  url: 'https://github.com/ippiliRajesh/game-of-life.git'
                  branch: 'master'
@@ -16,7 +16,7 @@ pipeline {
 
          }
 
-         stage( 'reports') {
+         stage ( 'reports') {
             steps{
                 Junit testResults : 'gameoflife-web/target/surefire-reports/TEST-*.xml',
                 archiveArtifacts artifacts : 'gameoflife-web/target/gameoflife.war'
