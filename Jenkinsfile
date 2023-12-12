@@ -3,7 +3,7 @@ pipeline {
         label 'JDK_8' 
     }
 
-    stages{
+    stages {
         stage ( 'scorce code management' ) {
             steps {
                 script { 
