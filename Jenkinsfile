@@ -7,7 +7,8 @@ pipeline {
         stage ( 'scorce code management' ) {
             steps {
                 script { 
-              git url: 'https://github.com/ippiliRajesh/game-of-life.git', branch: 'master' 
+              git url: 'https://github.com/ippiliRajesh/game-of-life.git',
+                  branch: 'master' 
             }
          }
         }
