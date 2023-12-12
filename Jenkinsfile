@@ -16,12 +16,12 @@ pipeline {
 
          }
 
-         stage ( 'reports') {
-            steps{
-                junit testResults : 'gameoflife-web/target/surefire-reports/TEST-*.xml',
-                archiveArtifacts artifacts : 'gameoflife-web/target/gameoflife.war'
-            }
-         } 
+        //  stage ( 'reports') {
+        //     steps{
+        //         junit testResults : 'gameoflife-web/target/surefire-reports/TEST-*.xml',
+        //         archiveArtifacts artifacts : 'gameoflife-web/target/gameoflife.war'
+        //     }
+        //  } 
 
 
     }
