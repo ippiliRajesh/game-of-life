@@ -3,6 +3,15 @@ pipeline {
         label 'JDK_8' 
     }
 
+    options {
+        timeout(time: 1, unit: 'HOURS')
+    }
+
+    triggers {  
+        pollSCM('* * * * *')
+    }
+
+
     stages {
         stage ( 'scorce code management' ) {
             steps {
